@@ -1,5 +1,8 @@
 from setuptools import setup
 
+with open("README.md") as fh:
+    long_description = fh.read()
+
 setup(
   name='helloworld',
   version='0.0.1',
@@ -10,5 +13,15 @@ setup(
                "Programming Language :: Python :: 3.6",
                "Programming Language :: Python :: 3.7",
                "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"
-               "Operating System :: OS Independent"]
+               "Operating System :: OS Independent"],
+  long_description=long_description,
+  long_description_content_type="text/markdown",
+  install_requires = [
+      "blessings ~- 1.7",
+  ],
+  extras_require = {
+      "dev":[
+          "pytest>=3.7",
+      ],
+  },
 )
