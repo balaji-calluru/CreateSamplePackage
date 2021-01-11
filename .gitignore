@@ -118,6 +118,7 @@ env.bak/
 venv.bak/
 pythonenv*
 .vscode/
+python-helloworld/
 
 # Spyder project settings
 .spyderproject

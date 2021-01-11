@@ -69,3 +69,39 @@ python setup.py sdist
 ```
 
 ## Create Manifest
+
+```
+pip install check-manifest
+check-manifest --create
+git add MANIFEST.in
+```
+
+## Prepare for "Publishing"
+
+```
+python setup.py bdist_wheel sdist
+```
+
+## Install Twine to Publish
+
+```
+pip install twine
+twine upload dist/*
+```
+
+## (Productionize) Install tox
+
+```
+pip install tox
+```
+
+## Other stuff to do -- Cookiecutter
+
+```
+pip install cookiecutter
+cookiecutter gh:ionelmc/cookiecutter-pylibrary
+```
+
+## More Info
+
+https://github.com/judy2k/publishing_python_packages_talk
