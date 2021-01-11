@@ -10,16 +10,22 @@ Based on the video Tutorial by Mark Smith (@judy2k)
 ## Creating a new package
 
 Create helloworld.py
+
 Create setup.py
+
 Then run setup
 
-Example setup command: ~\Miniconda3\python.exe setup.py bdist_wheel
+Example setup command:
+
+```
+python.exe setup.py bdist_wheel
+```
 
 ## Installing project
 
 Install the package in the local directory
 
-Example pip command: pip install -e .
+Example pip command:
 
 ```
 pip install -e .[dev]
@@ -45,3 +51,21 @@ say_hello()
 say_hello("Everybody")
 ```
 ## Test with pytest
+
+Install pytest
+Add pytest to the setup.py and execute the pip again
+
+Create test_helloworld.py
+
+Execute pytest
+```
+pytest
+```
+
+## Source Distribution
+
+```
+python setup.py sdist
+```
+
+## Create Manifest
