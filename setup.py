@@ -16,11 +16,11 @@ setup(
                "Operating System :: OS Independent"],
   long_description=long_description,
   long_description_content_type="text/markdown",
-  install_requires = [
+  install_requires=[
       "blessings ~= 1.7",
   ],
-  extras_require = {
-      "dev":[
+  extras_require={
+      "dev": [
           "pytest>=3.7",
       ],
   },
